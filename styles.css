@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Pushster&display=swap');
+
+body {
+	background-image: url(https://wallpapercave.com/download/black-website-background-wp3416319);
+	font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+}
+#title {
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+}
+#description {
+    color: seashell;
+    text-align: center;
+}
+#survey-form {
+    background-color: #205353;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    height: auto;
+    width: 750px;
+}
+#name-label{
+    font-weight: bold;
+    color: white;
+}
+#email-label{
+    font-weight: bold;
+    color: white;
+}
+#phonenumber-label{
+    font-weight: bold;
+    color: white;
+}
+#number-label{
+    font-weight: bold;
+    color: white;
+}
+#dropdown {
+    font-weight: bold;
+    color: white;
+}
+#submit{
+    background: red;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#usagedesc {
+    font-weight: bold;
+    color: white;
+}
+#usageradio {
+    color: white;
+    display: block;
+}
+#usageChoice {
+    font-weight: bold;
+}
+#checkboxtitle{
+    font-weight: bold;
+    color: white;
+}
+#checkbox-box {
+    color: white;
+}
+#ratingdesc {
+    font-weight: bold;
+    color: white;
+
+}
+#ratingradio{
+    color: white;
+
+}
+#submit-descr{
+    color: white;
+}
+#submit{
+    cursor: pointer;
+}
