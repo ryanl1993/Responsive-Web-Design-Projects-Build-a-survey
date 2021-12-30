@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <meta name="author" content="RyanL1993">
+    <meta name="description" content="freeCodeCamp Responsive Web Design Project - Build a Survey Form">
+	<title>Cambridge Bus Passenger Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1 id="title">Cambridge Bus Passenger Survey</h1>
+    <p id="description">Please complete the survery below so we can better understand our passengers.</p>
+
+    <form action="survey" id="survey-form">
+        <label for="name" id="name-label">Full Name</label>
+        <input type="text" placeholder="Name Here..." name="name" id="name" required>
+        <span>&nbsp;&nbsp;</span>
+
+        <label for="email" id="email-label">Email Address</label>
+        <input type="email" placeholder="Email Here..." name="email" id="email" type="email" required>
+
+        <p></p>
+        <label for="phonenumber" id="phonenumber-label">Contact Number</label>
+        <input type="number" placeholder="Phone Number..." name="phonenumber" id="phonenumber" type="number">
+
+        <span>&nbsp;</span>
+        <label for="number" id="number-label">Age (Not Required)</label>
+        <input type="number" placeholder="Age.." name="number" id="number" min="1" max="120" type="number">
+    
+        <label for="gender" id="dropdown">Gender</label>
+        <select name="genderid" id="dropdown">
+            <option></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="rather_not_say">Rather Not Say</option>
+        </select>
+
+        <div id="usageradio">
+            <p id="usagedesc">Please select the main reason you use the bus to travel.</p>
+            <input type="radio" id="usageChoice" value="commuting" name="usagelabel">
+            <label for="usage">Commuting</label>
+        
+            <input type="radio" id="usageChoice" value="business" name="usagelabel">
+            <label for="usage">Business</label>
+
+            <input type="radio" id="usageChoice" value="social" name="usagelabel">
+            <label for="usage">Social</label>
+
+            <input type="radio" id="usageChoice" value="notListed" name="usagelabel">
+            <label for="usage">Not Listed</label>
+        </div>
+
+        <p></p>
+        <div id="checkbox-box">
+            <div id="checkboxtitle">Which bus services do you use? (tick all that apply)</div><p></p>
+            <input type="checkbox" id="rn1" name="route1" value="route1">
+            <label for="route1">Citi 1</label>
+
+            <input type="checkbox" id="rn2" name="route2" value="route2">
+            <label for="route2">Citi 2</label>
+
+            <input type="checkbox" id="rn3" name="route3" value="route3">
+            <label for="route3">Citi 3</label>
+
+            <input type="checkbox" id="rn4" name="route4" value="route4">
+            <label for="route4">Citi 4</label>
+
+            <input type="checkbox" id="rn5" name="route5" value="route5">
+            <label for="route5">Citi 5</label>
+
+            <input type="checkbox" id="rn6" name="route6" value="route6">
+            <label for="route6">Citi 6</label>
+        </div>
+        <div id="ratingradio">
+            <p id="ratingdesc">Please select the main reason you use the bus to travel.</p>
+            <input type="radio" id="ratingChoice1" value="poor1" name="ratinglabel">
+            <label for="rating">1 (Poor)</label>
+        
+            <input type="radio" id="ratingChoice2" value="two" name="ratinglabel">
+            <label for="rating">2</label>
+
+            <input type="radio" id="ratingChoice3" value="three" name="ratinglabel">
+            <label for="rating">3 (Average)</label>
+
+            <input type="radio" id="ratingChoice4" value="four" name="ratinglabel">
+            <label for="rating">4</label>
+
+            <input type="radio" id="ratingChoice5" value="five" name="ratinglabel">
+            <label for="rating">5 (Great)</label>
+        </div>
+        <p></p>
+        <textarea rows="4" cols="50" name="additional" form="additional">Enter any additional comments here...</textarea>
+        <p id="submit-descr">Thank you for taking the time to complete our survey. Once you have completed the survey, please click submit below.</p>
+        <button type="submit" id="submit">Submit Survey</button>    
+    </form>
+    </div>
+</body>
+</html>
